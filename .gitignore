@@ -1,32 +1,90 @@
-# Prerequisites
-*.d
+###################################
+# C++ / SFML / General CMake ignore
+###################################
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+# Ignore build folders
+build/
+Build/
 
-# Precompiled Headers
-*.gch
-*.pch
+# Ignore CMake files
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
+# Ignore executables
 *.exe
 *.out
 *.app
+
+# Ignore object files
+*.o
+*.obj
+
+# Ignore generated libraries
+*.lib
+*.a
+*.so
+*.dll
+*.dylib
+
+# Ignore logs and temporary files
+*.log
+
+###################################
+# Visual Studio / IDEs
+###################################
+
+# VS specific files
+.vs/
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+*.sln
+*.suo
+*.svd
+*.vsidx
+*.vspscc
+*.vssscc
+
+# MonoDevelop / Rider
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.unityproj
+ExportedObj/
+
+###################################
+# Unity Specific
+###################################
+
+[Aa]ssets/AssetStoreTools*
+[Bb]uild/
+[Ll]ibrary/
+[Ll]ocal[Cc]ache/
+[Oo]bj/
+[Tt]emp/
+[Uu]nityGenerated/
+
+# Unity3D generated meta files
+*.pidb.meta
+
+# file on crash reports
+sysinfo.txt
+
+###################################
+# OS generated files
+###################################
+
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
+
+# Maze logs (if needed)
+maze/Logs/AssetImportWorker2.log
